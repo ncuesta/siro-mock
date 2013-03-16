@@ -1,0 +1,14 @@
+{
+  "name": "SiroMock",
+  "version": "0.0.1",
+  "main": "main.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "bootstrap": "~2.3.1"
+  }
+}

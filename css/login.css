@@ -1,0 +1,19 @@
+html body {
+  background: #f5f5f5;
+}
+
+#login-form-container {
+  margin-top: 10%;
+}
+
+.login-block {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 12px 6px;
+  border-radius: 6px;
+}
+
+.login-block .legend {
+  color: #999;
+  font-weight: 200;
+}
