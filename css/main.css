@@ -7,10 +7,11 @@ html body {
   background: #fff;
   padding: 24px 12px;
   border-radius: 6px;
+  margin-bottom: 20px;
 }
 
-.form-block {
-  margin-bottom: 20px;
+.form-block form {
+  margin-bottom: 0;
 }
 
 .form-block .legend {
@@ -38,4 +39,14 @@ html body {
 
 .actions {
   text-align: right;
+}
+
+.actions .primary-actions {
+  float: left;
+  margin-left: 20px;
+}
+
+.actions .secondary-actions {
+  float: right;
+  margin-right: 20px;
 }
