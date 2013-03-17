@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Siro | Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="components/bootstrap/docs/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body class="register">
+  <div class="container">
+    <h1>Create a new account</h1>
+
+    <div class="form-block">
+      <p class="legend span12">
+        Please provide the following information.
+        Required fields are marked with red dot (<span class="required-mark">&bull;</span>).
+      </p>
+
+      <form action="#register" method="post" id="register-form" class="form-horizontal">
+        <fieldset>
+          <legend>Personal information</legend>
+
+          <div class="span6">
+            <div class="control-group">
+              <label class="control-label" for="name">Name</label>
+              <div class="controls">
+                <input type="text" name="name" id="name" placeholder="Random Guy">
+                <span class="required-mark">&bull;</span>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="email">Email</label>
+              <div class="controls">
+                <input type="text" name="email" id="email" placeholder="randomguy@example.com">
+                <span class="required-mark">&bull;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="span5">
+            <img src="http://placekitten.com/g/140/60" class="img-polaroid">
+            <p>
+              Change your profile picture at <a href="http://gravatar.com" target="_blank">gravatar.com</a>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account information</legend>
+
+          <div class="control-group span11">
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+              <input type="text" name="username" id="username" placeholder="randomguy">
+              <span class="required-mark">&bull;</span>
+            </div>
+          </div>
+
+          <div class="control-group span11">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+              <input type="text" name="password" id="password" placeholder="$0m3tH|nGG_$3cR3T_!">
+              <span class="required-mark">&bull;</span>
+            </div>
+          </div>
+
+          <div class="control-group span11">
+            <label class="control-label" for="confirm">Confirmation</label>
+            <div class="controls">
+              <input type="text" name="confirm" id="confirm" placeholder="$0m3tH|nGG_$3cR3T_!">
+              <span class="required-mark">&bull;</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary btn-large">
+            Create account
+          </button>
+
+          <a href="login.html" class="btn btn-link">
+            Wait! I already have an account.
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-block">
+      <p class="legend span12">
+        Remember you can also create an account using any of these services:
+      </p>
+
+      <p class="centered">
+        <a href="#login-with-google" class="btn btn-secondary">
+          <i class="icon icon-user"></i>
+          Google
+        </a>
+        <a href="#login-with-github" class="btn btn-secondary">
+          <i class="icon icon-user"></i>
+          GitHub
+        </a>
+        <a href="#login-with-facebook" class="btn btn-secondary">
+          <i class="icon icon-user"></i>
+          Facebook
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <footer id="c-footer" class="navbar navbar-fixed-bottom">
+    <div class="container">
+      <p class="pull-right">
+        Siro &copy; 2013 <a href="http://ncuesta.com.ar">ncuesta</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="components/jquery/jquery.min.js"></script>
+  <script src="components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
