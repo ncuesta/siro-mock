@@ -1,5 +1,23 @@
 html body {
   background: #f5f5f5;
+  padding-bottom: 50px;
+}
+
+#c-footer {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #e5e5e5;
+  height: 40px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font-weight: 200;
+}
+
+#c-footer a {
+  color: #999;
+  font-weight: bold;
 }
 
 .form-block {
