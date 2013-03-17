@@ -13,7 +13,7 @@
 
     <div class="row" id="login-form-container">
       <div class="span5 offset3">
-        <h1>Siro | Sign in</h1>
+        <h1 class="centered">Siro | Sign in</h1>
       </div>
       <form action="#login" method="post" id="login-form" class="span5 offset3 login-block">
         <p class="span5 legend">Using an existing account:</p>
@@ -24,15 +24,23 @@
         </div>
 
         <div class="span5">
-          <label for="password">Password</label>
+          <label for="password">
+            Password
+          <a href="#forgot" class="offset1">
+            <i class="icon icon-question-sign"></i>
+            Forgot your password?
+          </a>
+
+          </label>
           <input type="password" name="password" id="password" placeholder="Password" class="span4">
         </div>
 
         <div class="span5">
-          <input type="submit" class="btn btn-primary" value="Sign in">
-          <a href="#forgot" class="btn btn-link">
-            Forgot your password?
-          </a>
+          <button type="submit" class="btn btn-primary">
+            <i class="icon icon-ok icon-white"></i>
+            Sign in
+          </button>
+          <a href="register.html" class="btn btn-link">or create a new account</a>
         </div>
       </form>
 
@@ -60,6 +68,14 @@
       </div>
     </div>
   </div>
+
+  <footer id="c-footer" class="navbar navbar-fixed-bottom">
+    <div class="container">
+      <p class="pull-right">
+        Siro &copy; 2013 <a href="http://ncuesta.com.ar">ncuesta</a>
+      </p>
+    </div>
+  </footer>
 
   <script src="components/jquery/jquery.min.js"></script>
   <script src="components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
