@@ -3,16 +3,21 @@ html body {
   padding-bottom: 50px;
 }
 
+html body.with-navbar {
+  padding-top: 40px;
+  background: #fff;
+}
+
 #c-footer {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
   background: #e5e5e5;
   height: 40px;
   padding: 10px 0;
   border-top: 1px solid #ddd;
   color: #999;
   font-weight: 200;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #c-footer a {
@@ -67,4 +72,16 @@ html body {
 .actions .secondary-actions {
   float: right;
   margin-right: 20px;
+}
+
+.navbar a.brand {
+  font-weight: bold;
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+          transition: all .3s linear;
+}
+
+.navbar a.brand:hover {
+  color: #fff;
+  text-shadow: 0 -3px 10px yellow, 0 3px 10px red;
 }
