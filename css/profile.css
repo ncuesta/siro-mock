@@ -1,0 +1,10 @@
+.time-since {
+  display: block;
+  margin-left: 18px;
+}
+
+.followers-count,
+.following-count {
+  font-size: x-large;
+  display: block;
+}

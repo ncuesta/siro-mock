@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="components/bootstrap/docs/assets/css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
   <div class="navbar navbar-fixed-top navbar-inverse">
@@ -60,10 +61,118 @@
   </div>
 
   <div class="container">
-    <!-- CONTENT GOES HERE -->
-    <h1>Random Guy <span class="lead text-info">This is you</span></h1>
+    <div class="row">
+      <div class="span9 offset3">
+        <h1>
+          <a href="profile.html">Random guy</a>
+          <span class="lead text-info">This is you!</span>
+        </h1>
+      </div>
 
-    <p class="alert alert-danger">This page hasn't been mocked yet.</p>
+      <div class="span3">
+        <p>
+          <img class="img-polaroid" src="http://placekitten.com/g/210/250">
+        </p>
+
+        <div class="centered">
+          <div class="btn-group">
+            <a class="btn" href="#followers">
+              <strong class="followers-count">8</strong> followers
+            </a>
+            <a class="btn" href="#following">
+              <strong class="following-count">1</strong> following
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="span9">
+        <p class="lead">
+          <a class="btn btn-secondary pull-right" href="edit-profile.html">
+            <i class="icon icon-pencil"></i>
+            Edit your profile
+          </a>
+
+          <strong class="muted">/randomguy</strong>
+
+          <a class="btn btn-info btn-small disabled" href="#follow">
+            <i class="icon icon-white icon-fire"></i>
+            Follow
+          </a>
+
+          <a class="btn btn-secondary btn-small" href="#share">
+            <i class="icon icon-share"></i>
+            Share
+          </a>
+
+        </p>
+
+        <p>
+          <i class="icon icon-envelope"></i>
+          <a href="mailto:randomguy@example.com">randomguy@example.com</a>
+        </p>
+
+        <p>
+          <i class="icon icon-globe"></i>
+          <a href="http://twitter.com/randomguy">@randomguy</a>
+        </p>
+
+        <p class="muted">
+          <i class="icon icon-time"></i>
+          Member since January 2, 2013
+        </p>
+
+        <h2>Latest activity</h2>
+
+        <p class="activity-item">
+          <i class="icon icon-plus-sign"></i>
+          You <strong>created</strong> a script: <a href="#">Example script 1</a>.
+          <small class="muted time-since">Moments ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-plus-sign"></i>
+          <a href="#profile-randomgirl">randomgirl</a> <strong>created</strong> a script: <a href="#">My super awesome script</a>.
+          <small class="muted time-since">An hour ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-upload"></i>
+          You <strong>uploaded</strong> a script: <a href="#">Test script 1</a>.
+          <small class="muted time-since">2 hours  ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-fire"></i>
+          <a href="#profile-randomgirl">randomgirl</a> <strong>started following</strong> <a href="#profile-siroboy">siroboy</a>.
+          <small class="muted time-since">A day ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-edit"></i>
+          You <strong>edited</strong> <a href="#">Default script</a>.
+          <small class="muted time-since">A week ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-fire"></i>
+          You <strong>started following</strong> <a href="#profile-randomgirl">randomgirl</a>.
+          <small class="muted time-since">A week ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-plus-sign"></i>
+          You <strong>created</strong> a script: <a href="#">Default script</a>.
+          <small class="muted time-since">Ten days ago</small>
+        </p>
+
+        <p class="activity-item">
+          <i class="icon icon-plus-sign"></i>
+          You <strong>created</strong> a script: <a href="#">My first script</a>.
+          <small class="muted time-since">A month ago</small>
+        </p>
+      </div>
+    </div>
   </div>
 
   <footer id="c-footer" class="navbar navbar-fixed-bottom">
