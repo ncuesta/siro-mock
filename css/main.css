@@ -85,3 +85,22 @@ html body.with-navbar {
   color: #fff;
   text-shadow: 0 -3px 10px yellow, 0 3px 10px red;
 }
+
+.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.people-list li {
+  padding: .5em 1em;
+}
+
+.people-list li img {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.people-list .username {
+  font-weight: bold;
+}
