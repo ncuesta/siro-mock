@@ -86,6 +86,10 @@ html body.with-navbar {
   text-shadow: 0 -3px 10px yellow, 0 3px 10px red;
 }
 
+img#gravatar {
+  display: inline-block;
+}
+
 .people-list {
   list-style: none;
   padding: 0;

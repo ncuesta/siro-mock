@@ -27,7 +27,7 @@
             <div class="control-group">
               <label class="control-label" for="name">Name</label>
               <div class="controls">
-                <input type="text" name="name" id="name" placeholder="Random Guy">
+                <input type="text" name="name" id="name" placeholder="Random Guy" required>
                 <span class="required-mark">&bull;</span>
               </div>
             </div>
@@ -35,14 +35,14 @@
             <div class="control-group">
               <label class="control-label" for="email">Email</label>
               <div class="controls">
-                <input type="text" name="email" id="email" placeholder="randomguy@example.com">
+                <input type="text" name="email" id="email" placeholder="randomguy@example.com" data-gravatar required>
                 <span class="required-mark">&bull;</span>
               </div>
             </div>
           </div>
 
           <div class="span5">
-            <img src="http://placekitten.com/g/140/60" class="img-polaroid">
+            <img src="http://gravatar.com/avatar/00000000000000000000?d=retro&s=140" class="img-polaroid" id="gravatar" data-gravatar-size="140" width="140" height="140">
             <p>
               Change your profile picture at <a href="http://gravatar.com" target="_blank">gravatar.com</a>
             </p>
@@ -55,7 +55,7 @@
           <div class="control-group span11">
             <label class="control-label" for="username">Username</label>
             <div class="controls">
-              <input type="text" name="username" id="username" placeholder="randomguy">
+              <input type="text" name="username" id="username" placeholder="randomguy" required>
               <span class="required-mark">&bull;</span>
             </div>
           </div>
@@ -63,7 +63,7 @@
           <div class="control-group span11">
             <label class="control-label" for="password">Password</label>
             <div class="controls">
-              <input type="text" name="password" id="password" placeholder="$0m3tH|nGG_$3cR3T_!">
+              <input type="text" name="password" id="password" placeholder="$0m3tH|nGG_$3cR3T_!" required>
               <span class="required-mark">&bull;</span>
             </div>
           </div>
@@ -71,7 +71,7 @@
           <div class="control-group span11">
             <label class="control-label" for="confirm">Confirmation</label>
             <div class="controls">
-              <input type="text" name="confirm" id="confirm" placeholder="$0m3tH|nGG_$3cR3T_!">
+              <input type="text" name="confirm" id="confirm" placeholder="$0m3tH|nGG_$3cR3T_!" required>
               <span class="required-mark">&bull;</span>
             </div>
           </div>
@@ -126,5 +126,7 @@
   <script src="components/jquery/jquery.min.js"></script>
   <script src="components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/md5.js"></script>
+  <script src="js/gravatar.js"></script>
 </body>
 </html>
