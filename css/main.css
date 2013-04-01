@@ -90,6 +90,13 @@ img#gravatar {
   display: inline-block;
 }
 
+/* Main lists */
+.main-list {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* People lists */
 .people-list {
   list-style: none;
   padding: 0;
@@ -107,4 +114,49 @@ img#gravatar {
 
 .people-list .username {
   font-weight: bold;
+}
+
+/* Asides */
+aside.list {
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(100, 100, 100, .5);
+}
+
+aside.list .title {
+  font-size: 16px;
+  border-bottom: 1px solid #red;
+  border-radius: 6px 6px 0 0;
+  background: #333;
+  color: #fff;
+  padding: 6px 12px;
+  margin-bottom: 0;
+}
+
+aside.list .related-items {
+  margin: 0;
+}
+
+aside.list .related-items .related-item {
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+       -o-transition: all .3s linear;
+          transition: all .3s linear;
+  color: #aaa;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #f6f6f6;
+  padding: 6px 12px;
+}
+
+aside.list .related-items .related-item:hover {
+  background: #f6f6f6;
+}
+
+aside.list .related-items .related-item:last-child {
+  border-bottom-width: 0;
+  border-radius: 0 0 6px 6px;
+}
+
+aside.list .all {
+  text-align: right;
 }
