@@ -81,14 +81,50 @@
               <div class="control-group">
                 <label class="control-label" for="title">Title</label>
                 <div class="controls">
-                  <input type="text" name="title" id="title" placeholder="My super awesome script" class="span6">
+                  <input type="text" name="title" id="title" placeholder="My super awesome script" class="span6" required>
+                  <span class="required-mark">&bull;</span>
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="row">
+            <div class="span12">
+              <div class="control-group">
+                <label class="control-label" for="description">Longer description</label>
+                <div class="controls">
+                  <textarea type="text" name="title" id="description" placeholder="This is a pretty neat script, it does a lot of things, like..." class="span6" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
         </fieldset>
 
+        <fieldset>
+          <legend>Additional information</legend>
+
+          <div class="row">
+            <div class="span12">
+              <div class="control-group">
+                <label class="control-label" for="notes">Notes</label>
+                <div class="controls">
+                  <textarea type="text" name="title" id="description" placeholder="Do you have any more information you want to record about this script? This won't be disclosed to other people." class="span6" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="actions clearfix">
+          <div class="primary-actions">
+            <button type="submit" class="btn btn-primary btn-large">
+              Done. Continue to the editor!
+            </button>
+            <a class="btn btn-secondary btn-large" href="dashboard.html">
+              Cancel
+            </a>
+          </div>
+        </div>
       </form>
     </div>
   </div>
