@@ -60,10 +60,37 @@
   </div>
 
   <div class="container">
-    <!-- CONTENT GOES HERE -->
     <h1>Create a new script from scratch</h1>
 
-    <p class="alert alert-danger">This page hasn't been mocked yet.</p>
+    <div class="form-block">
+      <p class="legend span12">
+        Please provide the following information to create a new script.
+        You will be taken to the script editor once the required data is correctly entered.
+      </p>
+
+      <p class="legend span12">
+        Required fields are marked with a red dot (<span class="required-mark">&bull;</span>).
+      </p>
+
+      <form action="editor.html" method="post" class="form-horizontal">
+        <fieldset>
+          <legend>Script information</legend>
+
+          <div class="row">
+            <div class="span12">
+              <div class="control-group">
+                <label class="control-label" for="title">Title</label>
+                <div class="controls">
+                  <input type="text" name="title" id="title" placeholder="My super awesome script" class="span6">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+
+      </form>
+    </div>
   </div>
 
   <footer id="c-footer" class="navbar navbar-fixed-bottom">
