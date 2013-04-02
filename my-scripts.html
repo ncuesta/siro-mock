@@ -5,14 +5,14 @@
   <title>Siro | My scripts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="components/bootstrap/docs/assets/css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/components/bootstrap/docs/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="dashboard.html">Siro<i class="icon icon-fire icon-white"></i></a>
+        <a class="brand" href="/dashboard.html">Siro<i class="icon icon-fire icon-white"></i></a>
 
         <ul class="nav pull-right">
           <li class="dropdown">
@@ -22,8 +22,8 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="new.html"><i class="icon icon-file"></i> Create a new script</a></li>
-              <li><a href="upload.html"><i class="icon icon-upload"></i> Upload a script file</a></li>
+              <li><a href="/script/new.html"><i class="icon icon-file"></i> Create a new script</a></li>
+              <li><a href="/script/upload.html"><i class="icon icon-upload"></i> Upload a script file</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -33,12 +33,12 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="my-scripts.html"><i class="icon icon-list"></i> My scripts</a></li>
+              <li><a href="/my-scripts.html"><i class="icon icon-list"></i> My scripts</a></li>
             </ul>
           </li>
           <li class="divider-vertical"></li>
           <li>
-            <a href="help.html"><i class="icon icon-question-sign icon-white"></i> Help</a>
+            <a href="/help.html"><i class="icon icon-question-sign icon-white"></i> Help</a>
           </li>
           <li class="divider-vertical"></li>
           <li class="dropdown">
@@ -48,10 +48,10 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="profile.html"><i class="icon icon-eye-open"></i> See my profile</a></li>
-              <li><a href="edit-profile.html"><i class="icon icon-pencil"></i> Edit my profile</a></li>
+              <li><a href="/profile.html"><i class="icon icon-eye-open"></i> See my profile</a></li>
+              <li><a href="/edit-profile.html"><i class="icon icon-pencil"></i> Edit my profile</a></li>
               <li class="divider"></li>
-              <li><a href="index.html"><i class="icon icon-off"></i> Sign out</a></li>
+              <li><a href="/index.html"><i class="icon icon-off"></i> Sign out</a></li>
             </ul>
           </li>
         </ul>
@@ -65,35 +65,116 @@
     <p class="lead">You can work with them here, delete them or create new ones.</p>
 
     <div class="row">
-      <div class="main-list span7">
-        <strong>TBD: Scripts go here</strong>
-      </div>
-      <aside class="span4 list related">
-        <p class="title">Scripts from your friends</p>
+      <div class="main-content span7">
+        <div class="scripts main-list">
+          <div class="row script">
+            <div class="span5">
+              <a href="#script" class="script-name">Example script 1</a>
+              <div class="additional-information">
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div>
+                  <i class="icon icon-time"></i>
+                  Updated a few moments ago.
+                </div>
+              </div>
+            </div>
+            <div class="span2 social-information">
+              <div>
+                <a href="/script/favorites.html" class="btn btn-link">
+                  <i class="icon icon-star"></i>
+                  3
+                </a>
+              </div>
 
-        <ul class="related-items unstyled">
-          <li class="related-item">
-            <div>
-              <a href="#script" class="script-name">My super awesome script</a> by <a href="#randomgirl" class="username">randomgirl</a>
+              <div>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
+                    Manage
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/script/editor.html">Edit</a>
+                    </li>
+                    <li>
+                      <a href="/script/copy.html">Copy into a new script</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="/script/delete.html">Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="related-item">
-            <div>
-              <a href="#script" class="script-name">Test #1</a> by <a href="#randomgirl" class="username">randomgirl</a>
-            </div>
-          </li>
-          <li class="related-item">
-            <div>
-              <a href="#script" class="script-name">Script test</a> by <a href="#siroboy" class="username">siroboy</a>
-            </div>
-          </li>
-          <li class="related-item all">
-            <div>
-              <a href="friends-scripts.html">See all &raquo;</a>
-            </div>
-          </li>
-        </ul>
-      </aside>
+          </div>
+
+          <!--
+              <td>Test script 1</td>
+            </tr>
+            <tr>
+              <td>Default script</td>
+            </tr>
+            <tr>
+              <td>My first script</td>
+            </tr>
+          -->
+        </div>
+      </div>
+
+      <div class="span4 asides">
+        <aside class="list related">
+          <p class="title">Scripts from your friends</p>
+
+          <ul class="related-items unstyled">
+            <li class="related-item">
+              <div>
+                <a href="#randomgirl" class="username">randomgirl</a> / <a href="#script" class="script-name">My super awesome script</a>
+              </div>
+            </li>
+            <li class="related-item">
+              <div>
+                <a href="#randomgirl" class="username">randomgirl</a> / <a href="#script" class="script-name">Test #1</a>
+              </div>
+            </li>
+            <li class="related-item">
+              <div>
+                <a href="#siroboy" class="username">siroboy</a> / <a href="#script" class="script-name">Script test</a>
+              </div>
+            </li>
+            <li class="related-item all">
+              <div>
+                <a href="/friends-scripts.html">See all &raquo;</a>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <aside class="list favorite">
+          <p class="title">Your favorite scripts</p>
+
+          <ul class="related-items unstyled">
+            <li class="related-item">
+              <div>
+                <a href="#randomgirl" class="username">randomgirl</a> / <a href="#script" class="script-name">My super awesome script</a>
+              </div>
+            </li>
+            <li class="related-item">
+              <div>
+                <a href="#randomgirl" class="username">randomgirl</a> / <a href="#script" class="script-name">Test #1</a>
+              </div>
+            </li>
+            <li class="related-item all">
+              <div>
+                <a href="/favorites.html">See all &raquo;</a>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
   </div>
 
@@ -105,8 +186,8 @@
     </div>
   </footer>
 
-  <script src="components/jquery/jquery.min.js"></script>
-  <script src="components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/components/jquery/jquery.min.js"></script>
+  <script src="/components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
