@@ -86,42 +86,59 @@ html body.with-navbar {
   text-shadow: 0 -3px 10px yellow, 0 3px 10px red;
 }
 
+/* Gravatar */
 img#gravatar {
   display: inline-block;
 }
 
 /* Main lists */
-.main-list  {
+.main-list .item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
 
+.main-list .item:last-child {
+  border-bottom-width: 0;
 }
 
 .scripts .script-name {
-  display: block;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
+  margin-right: 1em;
 }
 
-.scripts .additional-information {
+.scripts .script .additional-information {
   color: #aaa;
   font-size: 12px;
 }
 
-.scripts .additional-information .description {
+.scripts .script .additional-information .description {
   font-size: 14px;
+  margin-bottom: 7px;
 }
 
-.scripts .additional-information .icon {
+.scripts .script .additional-information .icon {
   opacity: .5;
 }
 
-.script .social-information a {
+.scripts .script .at-a-glance {
+  text-align: right;
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+
+.scripts .script .at-a-glance a {
   color: #333;
 }
 
-.script .social-information a:hover {
+.scripts .script .at-a-glance a:hover {
   text-decoration: none;
   opacity: .75;
+}
+
+.scripts .script .stats {
+  padding: 4px 12px;
 }
 
 /* People lists */

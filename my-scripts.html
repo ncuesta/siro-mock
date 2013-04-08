@@ -67,13 +67,32 @@
     <div class="row">
       <div class="main-content span7">
         <div class="scripts main-list">
-          <div class="row script">
+          <div class="row item script">
             <div class="span5">
-              <a href="#script" class="script-name">Example script 1</a>
+              <a href="#script" class="btn btn-link btn-mini script-name">Example script 1</a>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
+                  Manage
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/script/editor.html">Edit</a>
+                  </li>
+                  <li>
+                    <a href="/script/copy.html">Copy into a new script</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#delete" data-toggle="modal">Delete</a>
+                  </li>
+                </ul>
+              </div>
+
               <div class="additional-information">
                 <div class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div>
                   <i class="icon icon-time"></i>
@@ -81,47 +100,228 @@
                 </div>
               </div>
             </div>
-            <div class="span2 social-information">
-              <div>
-                <a href="/script/favorites.html" class="btn btn-link">
+            <div class="span2 at-a-glance">
+              <div class="stats">
+                <a href="/script/favorites.html" class="favorites" title="3 favorites">
                   <i class="icon icon-star"></i>
                   3
                 </a>
               </div>
+              <div class="stats">
+                <span title="564 lines of code">
+                  <i class="icon icon-align-left"></i>
+                  564
+                </span>
+                <span title="123 kilobytes">
+                  <i class="icon icon-hdd"></i>
+                  123 kB
+                </span>
+              </div>
 
-              <div>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
-                    Manage
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="/script/editor.html">Edit</a>
-                    </li>
-                    <li>
-                      <a href="/script/copy.html">Copy into a new script</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="/script/delete.html">Delete</a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="download">
+                <a class="btn btn-link" href="#download">
+                  <i class="icon icon-download"></i>
+                  Download
+                </a>
               </div>
             </div>
           </div>
 
-          <!--
-              <td>Test script 1</td>
-            </tr>
-            <tr>
-              <td>Default script</td>
-            </tr>
-            <tr>
-              <td>My first script</td>
-            </tr>
-          -->
+          <div class="row item script">
+            <div class="span5">
+              <a href="#script" class="btn btn-link btn-mini script-name">Test script 1</a>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
+                  Manage
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/script/editor.html">Edit</a>
+                  </li>
+                  <li>
+                    <a href="/script/copy.html">Copy into a new script</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#delete" data-toggle="modal">Delete</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="additional-information">
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div>
+                  <i class="icon icon-time"></i>
+                  Updated a day ago.
+                </div>
+              </div>
+            </div>
+            <div class="span2 at-a-glance">
+              <div class="stats">
+                <a href="/script/favorites.html" class="favorites" title="3 favorites">
+                  <i class="icon icon-star"></i>
+                  3
+                </a>
+              </div>
+              <div class="stats">
+                <span title="564 lines of code">
+                  <i class="icon icon-align-left"></i>
+                  564
+                </span>
+                <span title="123 kilobytes">
+                  <i class="icon icon-hdd"></i>
+                  123 kB
+                </span>
+              </div>
+
+              <div class="download">
+                <a class="btn btn-link" href="#download">
+                  <i class="icon icon-download"></i>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row item script">
+            <div class="span5">
+              <a href="#script" class="btn btn-link btn-mini script-name">Default script</a>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
+                  Manage
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/script/editor.html">Edit</a>
+                  </li>
+                  <li>
+                    <a href="/script/copy.html">Copy into a new script</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#delete" data-toggle="modal">Delete</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="additional-information">
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div>
+                  <i class="icon icon-time"></i>
+                  Updated two days ago.
+                </div>
+              </div>
+            </div>
+            <div class="span2 at-a-glance">
+              <div class="stats">
+                <a href="/script/favorites.html" class="favorites" title="0 favorites">
+                  <i class="icon icon-star"></i>
+                  0
+                </a>
+              </div>
+              <div class="stats">
+                <span title="5 lines of code">
+                  <i class="icon icon-align-left"></i>
+                  5
+                </span>
+                <span title="10 kilobytes">
+                  <i class="icon icon-hdd"></i>
+                  10 kB
+                </span>
+              </div>
+
+              <div class="download">
+                <a class="btn btn-link" href="#download">
+                  <i class="icon icon-download"></i>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row item script">
+            <div class="span5">
+              <a href="#script" class="btn btn-link btn-mini script-name">My first script</a>
+
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary btn-mini dropdown-toggle" data-toggle="dropdown">
+                  Manage
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/script/editor.html">Edit</a>
+                  </li>
+                  <li>
+                    <a href="/script/copy.html">Copy into a new script</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#delete" data-toggle="modal">Delete</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="additional-information">
+                <div class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                </div>
+                <div>
+                  <i class="icon icon-time"></i>
+                  Updated a week ago.
+                </div>
+              </div>
+            </div>
+            <div class="span2 at-a-glance">
+              <div class="stats">
+                <a href="/script/favorites.html" class="favorites" title="30 favorites">
+                  <i class="icon icon-star"></i>
+                  30
+                </a>
+              </div>
+              <div class="stats">
+                <span title="124 lines of code">
+                  <i class="icon icon-align-left"></i>
+                  124
+                </span>
+                <span title="240 kilobytes">
+                  <i class="icon icon-hdd"></i>
+                  240 kB
+                </span>
+              </div>
+
+              <div class="download">
+                <a class="btn btn-link" href="#download">
+                  <i class="icon icon-download"></i>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal hide fade" id="delete">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>We need your confirmation</h3>
+          </div>
+          <div class="modal-body">
+            <p>It seems like you want to delete your script:</p>
+            <p>Please note that this action <strong class="text-error">cannot be undone</strong>, so once you confirm your script will be <strong class="text-error">permanently deleted</strong>.</p>
+            <p>Please confirm that you want to delete it in order to proceed with the action.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">No, I'd rather keep it</a>
+            <a href="#" class="btn btn-danger" data-dismiss="modal">Yes, delete it permanently</a>
+          </div>
         </div>
       </div>
 
