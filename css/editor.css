@@ -1,2 +1,86 @@
-.editor-container {
+html body.editor {
+  background-color: #333;
 }
+
+.editor-container,
+.editor-container * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.editor-container {
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:         flex;
+  -webkit-flex-flow: row wrap;
+     -moz-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+     -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: stretch;
+     -moz-align-items: stretch;
+      -ms-align-items: stretch;
+          align-items: stretch;
+  background: #333;
+}
+
+.CodeMirror,
+#simulator,
+#editor-code,
+#console-container {
+  border-radius: 3px;
+  border: 1px solid #333;
+  min-height: 50px;
+  margin: 0;
+  background-color: #fff;
+}
+
+#simulator {
+  width: 100%;
+  -webkit-order: 1;
+     -moz-order: 1;
+      -ms-order: 1;
+          order: 1;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, .75) inset;
+     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, .75) inset;
+      -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, .75) inset;
+          box-shadow: 0 1px 10px rgba(0, 0, 0, .75) inset;
+}
+
+.CodeMirror,
+#editor-code {
+  width: 50%;
+  -webkit-order: 2;
+     -moz-order: 2;
+      -ms-order: 2;
+          order: 2;
+  resize: none;
+  border-color: #333;
+  box-shadow: 0 0 6px rgba(22, 22, 22, .5) inset;
+}
+
+#console-container {
+  width: 50%;
+  -webkit-order: 3;
+     -moz-order: 3;
+      -ms-order: 3;
+          order: 3;
+}
+
+
+/* TODO: TO BE REMOVED */
+.fpo {
+  color: #eee;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.8;
+  display: block;
+  text-align: center;
+}
+/* /TODO */

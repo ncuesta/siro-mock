@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/components/bootstrap/docs/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="/components/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="/components/codemirror/theme/monokai.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/editor.css">
 </head>
-<body>
+<body class="with-navbar editor">
   <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
       <div class="container">
@@ -60,11 +62,17 @@
     </div>
   </div>
 
-  <div class="editor-container container">
-    <h1>Editor</h1>
-    <p class="alert alert-danger">This page hasn't been mocked yet.</p>
+  <div class="editor-container" id="editor-container">
+    <canvas id="simulator"></canvas>
+
+    <textarea name="editor[code]" id="editor-code"></textarea>
+
+    <div id="console-container">
+      <span class="fpo">CONSOLE</span>
+    </div>
   </div>
 
+<!--
   <footer id="c-footer" class="navbar navbar-fixed-bottom">
     <div class="container">
       <p class="pull-right">
@@ -72,9 +80,13 @@
       </p>
     </div>
   </footer>
+-->
 
   <script src="/components/jquery/jquery.min.js"></script>
   <script src="/components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+  <script src="/components/codemirror/lib/codemirror.js"></script>
+  <script src="/components/codemirror/mode/python/python.js"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/editor.js"></script>
 </body>
 </html>
