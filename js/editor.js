@@ -59,23 +59,23 @@ jQuery(function($) {
     setWidth();
   }
 
-  var $w = $(window);
+  var $w = $(window),
+    // Initialize CodeMirror
+    codeMirror = CodeMirror.fromTextArea(document.getElementById('editor-code'), {
+      theme:        'monokai',
+      tabSize:      2,
+      lineNumbers:  true,
+      lineWrapping: true,
+      autofocus:    true
+    });
 
   // Set an initial height for the simulator to avoid miscalculations
   document.getElementById('simulator').height = $w.height() / 2;
 
   heighten('#editor-container', true);
   widen('#simulator', $w);
-  heighten('#simulator', true);
-
-  // Initialize CodeMirror
-  CodeMirror.fromTextArea(document.getElementById('editor-code'), {
-    theme: 'monokai',
-    tabSize: 2,
-    lineNumbers: true,
-    lineWrapping: true,
-    autofocus: true
-  });
+  // TODO: Fix this as it mangles the canvas element scale
+  //heighten('#simulator', true);
 
   // Fiddle on the simulator (will be a separate thing)
   (function() {
